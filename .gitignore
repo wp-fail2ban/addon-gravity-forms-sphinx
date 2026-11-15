@@ -1,1 +1,4 @@
+.rstcheck.cfg
+.vscode/
+.venv/
 _build/
