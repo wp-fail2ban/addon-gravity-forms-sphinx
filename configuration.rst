@@ -6,10 +6,10 @@ Configuration
 Enable logging
 --------------
 
-QuickStart and the Gravity Forms settings **Enabled** control save
-``wpf2b_addon_gf_enabled`` (default enabled). A PHP constant
-:ref:`WP_FAIL2BAN_ADDON_GRAVITY_FORMS_ENABLED` takes priority over the saved
-option and locks both controls. When logging is off, the add-on registers no
+QuickStart and the Gravity Forms settings **Enabled** control turn spam
+logging on or off (default enabled). A PHP constant
+:ref:`WP_FAIL2BAN_ADDON_GRAVITY_FORMS_ENABLED` takes priority over those
+controls and locks them. When logging is off, the add-on registers no
 messages and does not hook Gravity Forms.
 
 fail2ban filter and jail

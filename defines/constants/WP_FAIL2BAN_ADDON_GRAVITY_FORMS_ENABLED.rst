@@ -11,14 +11,13 @@ WP_FAIL2BAN_ADDON_GRAVITY_FORMS_ENABLED
 ----
 
 Fixes whether the add-on logs Gravity Forms spam submissions. When the
-constant is defined, it overrides the saved WordPress option
-``wpf2b_addon_gf_enabled`` and locks the QuickStart card and the Gravity Forms
-settings **Enabled** control.
+constant is defined, it overrides the enable choice from QuickStart and the
+Gravity Forms settings **Enabled** control and locks both controls.
 
 A :php:`true` value keeps logging on; a :php:`false` value keeps it off.
-Without the constant, a missing option defaults to enabled. Disabling the
-add-on stops Gravity Forms spam hooks and message registration without removing
-the settings UI that turns it back on.
+Without the constant, logging defaults to enabled. Disabling the add-on stops
+Gravity Forms spam hooks and message registration without removing the
+settings UI that turns it back on.
 
 .. code-block:: php
    :caption: Example: Disable Gravity Forms spam logging
@@ -27,10 +26,9 @@ the settings UI that turns it back on.
 
 **Accepted values:** :php:`true` or :php:`false`
 
-**Default:** enabled (the option is absent or stores ``'1'``)
+**Default:** enabled
 
-The option stores only the strings ``'0'`` and ``'1'``. Free and Premium both
-save the option unless a PHP constant locks it.
+Free and Premium both honour the enable switch unless a PHP constant locks it.
 
 .. seealso::
    * :ref:`configuration`
