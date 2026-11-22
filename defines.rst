@@ -4,9 +4,9 @@
 ``define()`` constants
 ======================
 
-These constants provide fixed configuration in ``wp-config.php``.
-:ref:`WP_FAIL2BAN_ADDON_GRAVITY_FORMS_ENABLED` locks the enable switch used by
-QuickStart and the Gravity Forms settings tab.
+One constant can lock the enable switch from ``wp-config.php``. When it is
+defined, it overrides the saved site option and both WordPress controls become
+read-only.
 
 .. toctree::
    :maxdepth: 1

@@ -1,19 +1,21 @@
-===============================
-WP fail2ban Gravity Forms 3.0
-===============================
+=====================================
+WP fail2ban Add-on for Gravity Forms
+=====================================
 
-This add-on extends `WP fail2ban <https://wp-fail2ban.com/>`_ with support for
-spam form submissions via Gravity Forms. When Gravity Forms marks a submission
-as spam, the add-on writes a soft message that fail2ban can match.
+This add-on connects Gravity Forms spam decisions to WP fail2ban. When Gravity
+Forms marks an entry as spam, the add-on writes a soft syslog message that an
+installed fail2ban filter can match.
 
-:ref:`WP_FAIL2BAN_ADDON_GRAVITY_FORMS_ENABLED` locks the enable switch used by
-QuickStart and the Gravity Forms settings tab. :ref:`configuration` covers the
-fail2ban filter and jail setup.
+Start with :ref:`about` for the message path, then :ref:`installation` for the
+shortest working setup. :ref:`configuration` explains the enable switch on
+WP fail2ban 6.3.
 
 .. toctree::
    :caption: Manual
    :maxdepth: 2
 
+   about
+   installation
    configuration
 
 .. toctree::
@@ -21,4 +23,5 @@ fail2ban filter and jail setup.
    :maxdepth: 2
 
    defines
+   filters
    release
