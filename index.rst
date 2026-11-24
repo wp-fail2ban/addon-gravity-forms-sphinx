@@ -24,4 +24,3 @@ WP fail2ban 6.3.
 
    defines
    filters
-   release
